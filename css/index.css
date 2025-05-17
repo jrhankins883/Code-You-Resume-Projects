@@ -86,14 +86,12 @@ a {
 }
 
 @media (min-width: 1024px) {
-  /* Target the container */
   .container {
     display: flex;
     flex-direction: column;
     align-items: center;
   }
 
-  /* Create a layout grid for the 4 middle sections */
   .container .section:nth-of-type(2),
   .container .section:nth-of-type(3),
   .container .section:nth-of-type(4),
@@ -107,3 +105,4 @@ a {
     gap: 20px;
     width: 100%;
   }
+}
