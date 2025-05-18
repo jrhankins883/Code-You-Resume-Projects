@@ -70,36 +70,30 @@ a {
 }
 
 @media (min-width: 600px) and (max-width: 1023px) {
-  .two-column-container {
-    display: flex;
+  .section-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
     gap: 20px;
-    justify-content: space-between;
   }
 
-  .two-column-container .column {
-    width: 50%;
+  .section-grid .section {
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
   }
 
-  .section:not(.two-column-container) {
+  .section-grid .section h2 {
+    text-align: center;
+  }
+
+  .header,
+  .projects {
     text-align: center;
   }
 }
 
 @media (min-width: 1024px) {
-  .container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .container .section:nth-of-type(2),
-  .container .section:nth-of-type(3),
-  .container .section:nth-of-type(4),
-  .container .section:nth-of-type(5) {
-    width: 100%;
-  }
-
-  .container .section-grid {
+  .section-grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 20px;
