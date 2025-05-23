@@ -1,5 +1,4 @@
 body {
-    background-color: black;
     font-family: Arial, sans-serif;
     line-height: 1.6;
     margin: 0;
@@ -18,10 +17,10 @@ body {
 h1, h2 {
     color: #007bff;
 }
-.header {
+header {
     text-align: center;
 }
-.header h1 {
+header h1 {
     margin: 10px 0;
 }
 .contact {
@@ -32,10 +31,10 @@ h1, h2 {
     color: #007bff;
     text-decoration: none;
 }
-.section {
+.section-grid {
     margin: 20px 0;
 }
-.section h2 {
+.section-grid h2 {
     margin-bottom: 10px;
     border-bottom: 2px solid #007bff;
     padding-bottom: 5px;
@@ -52,11 +51,11 @@ h1, h2 {
     margin: 5px 0;
     font-size: 14px;
 }
-.skills ul {
+.skills-section ul {
     list-style: none;
     padding: 0;
 }
-.skills ul li {
+.skills-section ul li {
     display: inline-block;
     background: #007bff;
     color: #fff;
@@ -65,38 +64,45 @@ h1, h2 {
     border-radius: 4px;
 }
 
-a {
-    color: blue;
-}
+
 
 @media (min-width: 600px) and (max-width: 1023px) {
-  .section-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr; 
-    gap: 20px;
-  }
+    .summary-section {
+        display: grid;
+        place-items: center;
+        text-align: center;
+    }
+    .summary-section h2 {
+        margin: 0;
+    }
 
-  .section-grid .section {
-    padding: 10px;
-    border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
-  }
+    .work-items {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+    }
+    .column-work-experience h2 {
+        text-align: center;
+    }
+    .work-item1, .work-item2 {
+        margin: 0;
+    }
 
-  .section-grid .section h2 {
-    text-align: center;
-  }
+    .education-section {
+        text-align: center;
+    }
 
-  .header,
-  .projects {
-    text-align: center;
-  }
+    .bottom-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+        margin: 20px;
+    }
+    .skills-section, .projects-section {
+        text-align: center;
+    }
 }
 
 @media (min-width: 1024px) {
-  .section-grid {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 20px;
-    width: 100%;
-  }
+  
 }
