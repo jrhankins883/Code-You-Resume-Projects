@@ -16,12 +16,16 @@ body {
 }
 h1, h2 {
     color: #007bff;
+    text-align: center;
 }
 header {
     text-align: center;
 }
 header h1 {
     margin: 10px 0;
+}
+.desktop-only {
+    display: none;
 }
 .contact {
     margin: 10px 0;
@@ -31,8 +35,12 @@ header h1 {
     color: #007bff;
     text-decoration: none;
 }
+.summary-section {
+    text-align: center;
+}
 .section-grid {
     margin: 20px 0;
+    text-align: center;
 }
 .section-grid h2 {
     margin-bottom: 10px;
@@ -104,5 +112,30 @@ header h1 {
 }
 
 @media (min-width: 1024px) {
-  
+  h1 {
+    text-align: center;
+  }
+
+  .desktop-columns {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    text-align: center;
+  }
+  .contact {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    gap: 20px;
+  }
+  .desktop-only {
+    display: block;
+  }
+  .column-work-experience {
+    text-align: center;
+  }
+  .bottom-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
 }
