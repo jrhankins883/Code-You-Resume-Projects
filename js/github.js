@@ -1,3 +1,5 @@
+console.log("GitHub, are you loading right?");
+
 const username = "jrhankins883";
 const url = `https://api.github.com/users/${username}/repos`;
 const list = document.getElementById("repo-list");
